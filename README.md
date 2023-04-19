@@ -1,10 +1,11 @@
-# python-tox-example
-A Python project with tox configuration and pyenv
+# Tox example
+The Python project aims to test the compatibility of code with multiple Python versions using the tools tox, pyenv, and pytest.
 
-# Use case
-the example to test if the python script working well with 3.7, 3.8, 3.9, 3.10, 3.11
+### Use case
+Test the Python script for compatibility with versions 3.7, 3.8, 3.9, 3.10, and 3.11.
 
-# How to 
+
+### How to 
 1. install tox in the global environment
 ```
 pip install tox
@@ -30,6 +31,9 @@ tox run
 ```
 
 
-5. result
+### Result
+Tox displays the issues in each file for each Python version:
+![report](resources/report_in_file.png)
+ and then provides the most compatible Python versions at the end of the report.
+![report](resources/report.png)
 
-tox shows you the most compatible python versions in the reports
